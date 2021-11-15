@@ -9,6 +9,7 @@ python-dotenv = "*"
 djangorestframework = "*"
 django-filter = "*"
 psycopg2-binary = "*"
+gunicorn = "*"
 
 [dev-packages]
 
