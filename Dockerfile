@@ -50,7 +50,7 @@ RUN pip install --upgrade --no-cache pip && pip install --no-cache /wheels/*
 
 # copy entrypoint files
 COPY ./entrypoint.sh  ./
-RUN sed -i 's/\r$//g'  $APP_HOME/entrypoint.sh && chmod +x  $APP_HOME/entrypoint.sh && \
+RUN sed -i 's/\r$//g'  $APP_HOME/entrypoint.sh && chmod +x  $APP_HOME/entrypoint.sh
 
 # copy project
 COPY . $APP_HOME
