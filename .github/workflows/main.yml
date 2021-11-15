@@ -76,7 +76,7 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          scp -o StrictHostKeyChecking=no "./.env" "./.db.env" "./.backups.env" "./docker-compose.yml" root@${{ secrets.HOST_IP_ADDRESS }}:/root/bcraft
+          scp -o StrictHostKeyChecking=no "./.env" "./.db.env" "./docker-compose.yml" root@${{ secrets.HOST_IP_ADDRESS }}:/root/bcraft
           ssh -o StrictHostKeyChecking=no root@${{ secrets.HOST_IP_ADDRESS }} << 'ENDSSH'
             cd /root/bcraft
             source ./.env
