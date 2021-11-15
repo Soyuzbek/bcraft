@@ -28,7 +28,7 @@ services:
       - media_volume:/home/app/web/media
       - /var/run/bcraft:/var/run/bcraft
     ports:
-      - "8080:80"
+      - "80:80"
     depends_on:
       - web
     restart: unless-stopped
